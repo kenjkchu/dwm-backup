@@ -10,8 +10,8 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 10;
 static const int sidepad            = 10; 
 static const int user_bh            = 5; 
-static const char *fonts[]          = { "IBMPlexMono:size=10" };
-static const char dmenufont[]       = "IBMPlexMono:size=10";
+static const char *fonts[]          = { "IBMPlexMono:size=12" };
+static const char dmenufont[]       = "IBMPlexMono:size=12";
 static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#1d2021";
 static const char col_gray3[]       = "#bbbbbb";
@@ -63,7 +63,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
